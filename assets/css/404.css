@@ -4,6 +4,10 @@
   display: flex;
 }
 
+header{
+  margin-bottom: 185px;
+}
+
 li {
   background-image: linear-gradient(180deg, var(--white-200), var(--dark));
   background-size: 100%;
@@ -89,16 +93,21 @@ li {
 
   .right img {
     max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .right p{
+    font-size: 1.125rem;
   }
   .left h1 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     text-align: center;
   }
 
   .left p {
     text-align: center;
     font-size: 0.8rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
   }
 
   .left button {

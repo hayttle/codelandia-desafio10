@@ -9,6 +9,8 @@
 :root {
   --dark: #13131f;
   --gray-200: #282830;
+  --gray-300: #545454;
+  --gray-400: #989898;
   --white: #fefbfb;
   --white-200: #c4c4c4;
   --purple-light: #8257e6;
@@ -22,7 +24,7 @@ body {
   background-color: var(--dark);
   color: var(--white-200);
 }
-button{
+button {
   cursor: pointer;
 }
 
@@ -34,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 26px;
-  margin-bottom: 185px;
+  margin-bottom: 90px;
 }
 
 .logo {
@@ -44,8 +46,14 @@ header {
   color: var(--purple-light);
 }
 
+nav {
+  display: flex;
+}
+
 ul {
   display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 li {
@@ -53,5 +61,46 @@ li {
   font-family: Inter, sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  padding: 0 40px;
+  cursor: pointer;
+}
+
+li.account {
+  display: flex;
+  align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 0.875rem;
+  padding: 5px 20px;
+  border: 1px solid var(--purple-light);
+  border-radius: 30px;
+  margin-left: 24px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--white-200);
+}
+
+footer{
+  max-width: 500px;
+ text-align: center;
+}
+
+footer h2{
+  font-family: 'Lexend Deca',sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--purple-light);
+  margin-bottom: 16px;
+}
+
+footer p{
+  font-family: Inter,sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white-200);
+  line-height: 24px;
+  margin-bottom: 40px;
 }
